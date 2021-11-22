@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hatvanyozás</title>
+    <script src="2hatvany.js"></script>
    
 </head>
 <body>
-    <table>
+    <form action="" name="urlap" >
+        Hatvány alap:
+        <input type="number" name="alap" id="alap" min="2" max="6" required><br>
+        Kitevő: 
+        <input type="number" name="hatar" id="hatar" min="5" max="20" required><br>
+        <input type="button" value="szamolj" onclick="szamol(document.urlap.alap.value, document.urlap.hatar.value)">
+    </form>
+
+
+
+    <!--    <table>
 <tr>
     <th>Hatvány</th> 
     <th>Érték</th> 
 </tr>
-
-<script>
-    let hatar =parseInt(prompt("Adja meg a határ értéket:",10));
-    let ertek=1;
-        for (i=0; i <= hatar; i++){
-            document.write("<tr><td>3<sup>"+i+"</sup></td><td>"+ertek+"</td></tr>");
-            ertek*=3;
-        }
-</script>
-    </table>
+    <script>
+        let hatar =parseInt(prompt("Adja meg a határ értéket:",10));
+        let ertek=1; 
+            for (i=0; i <= hatar; i++){
+                document.write("<tr><td>2<sup>"+i+"</sup></td><td>"+ertek+"</td></tr>");
+                rtek*=2;
+            }
+    </script> 
+    </table> -->
 </body>
 </html>
